@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/optimizedhubllc-prog/optimized-hub-assets/main/OH_Logo_Dark%20(2).png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Optimized Hub — AI-Powered Database Reactivation for Your CRM</title>
+<meta name="description" content="We reactivate the dormant leads already sitting in your CRM. Starting at $397/mo, no setup fee. Free audit shows you exactly what's worth recovering.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+  :root {
+    --cobalt: #2563EB;
+    --cobalt-mid: #3B82F6;
+    --copper: #C17B3C;
+    --copper-light: #D4933F;
+    --ink: #111827;
+    --ink-bg: #0B0F1A;
+    --ink-card: #151B29;
+    --pearl: #F8FAFC;
+    --pearl-dim: #E5EAF0;
+    --muted: #9CA3AF;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: var(--ink-bg); color: var(--pearl); }
+
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 24px 40px;
+    background: var(--ink-bg);
+    border-bottom: 1px solid rgba(248,250,252,0.06);
+    position: sticky; top: 0; z-index: 50;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 16px; letter-spacing: 0.05em; text-decoration: none; color: var(--pearl); }
+  .logo-mark { display: none; }
+  .logo img { width: 30px; height: 30px; border-radius: 8px; border: 1px solid rgba(96,165,250,0.4); }
+  nav { display: flex; gap: 32px; align-items: center; }
+  nav a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; }
+  nav a:hover { color: var(--pearl); }
+  .nav-cta { background: var(--cobalt); color: var(--pearl) !important; padding: 10px 20px; border-radius: 8px; font-weight: 700; }
+
+  section { padding: 90px 24px; max-width: 1100px; margin: 0 auto; }
+
+  .eyebrow {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--copper-light);
+    margin-bottom: 14px;
+  }
+
+  h1, h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800; line-height: 1.15;
+  }
+
+  .hero { text-align: center; padding-top: 80px; }
+  .hero .tag { font-size: 12px; font-weight: 700; letter-spacing: 0.16em; color: var(--copper-light); text-transform: uppercase; margin-bottom: 20px; }
+  .hero h1 { font-size: 52px; max-width: 850px; margin: 0 auto 28px; }
+  .hero h1 .accent { color: var(--copper-light); }
+  .hero .sub { font-size: 17px; color: var(--muted); max-width: 620px; margin: 0 auto 40px; line-height: 1.7; }
+  .cta-button {
+    display: inline-block; background: var(--cobalt); color: var(--pearl);
+    font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 15px;
+    padding: 16px 36px; border-radius: 8px; text-decoration: none;
+  }
+  .hero-stats { display: flex; justify-content: center; gap: 80px; margin-top: 70px; }
+  .hero-stat .num { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 34px; font-weight: 800; color: var(--copper-light); }
+  .hero-stat .label { font-size: 13px; color: var(--muted); margin-top: 6px; }
+
+  section h2 { font-size: 38px; margin-bottom: 18px; max-width: 700px; }
+  .subhead { font-size: 16px; color: var(--muted); line-height: 1.6; max-width: 560px; margin-bottom: 48px; }
+
+  .offer-card {
+    background: var(--ink); border: 1px solid rgba(37,99,235,0.25);
+    border-radius: 16px; padding: 48px 44px; text-align: left; max-width: 640px;
+  }
+  .offer-card .card-eyebrow { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cobalt-mid); margin-bottom: 10px; }
+  .offer-card h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 28px; font-weight: 700; margin-bottom: 14px; }
+  .offer-card .desc { font-size: 15px; color: var(--muted); line-height: 1.65; margin-bottom: 32px; max-width: 480px; }
+  .price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 6px; }
+  .price { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 48px; font-weight: 800; color: var(--pearl); }
+  .price-unit { font-size: 16px; color: var(--muted); }
+  .no-setup { font-size: 13px; color: var(--copper-light); font-weight: 600; margin-bottom: 32px; }
+  .features { list-style: none; margin-bottom: 40px; border-top: 1px solid rgba(248,250,252,0.08); padding-top: 28px; }
+  .features li { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; color: var(--pearl-dim); padding: 9px 0; }
+  .features li svg { flex-shrink: 0; margin-top: 3px; }
+  .cta-micro { display: block; margin-top: 14px; font-size: 13px; color: var(--muted); }
+  .secondary-link-wrap { margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(248,250,252,0.08); }
+  .secondary-link-wrap a { font-size: 14px; color: var(--muted); text-decoration: underline; }
+
+  .offer-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .offer-note { margin-bottom: 32px; }
+  .offer-note a { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; font-weight: 600; color: var(--copper-light); text-decoration: underline; }
+
+  .who-card { background: var(--ink); border: 1px solid rgba(37,99,235,0.2); border-radius: 16px; padding: 44px; max-width: 640px; }
+  .who-icon { width: 52px; height: 52px; background: rgba(37,99,235,0.12); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 20px; }
+  .who-card h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px; font-weight: 700; margin-bottom: 12px; }
+  .who-card p { color: var(--muted); font-size: 15px; line-height: 1.65; margin-bottom: 24px; }
+  .who-card ul { list-style: none; }
+  .who-card li { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; color: var(--pearl-dim); padding: 8px 0; }
+  .who-card li svg { flex-shrink: 0; margin-top: 3px; }
+
+  .cost-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .cost-card { background: var(--ink-card); border-radius: 14px; padding: 32px; }
+  .cost-card .stat { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 40px; font-weight: 800; color: var(--copper-light); margin-bottom: 8px; }
+  .cost-card .label { font-weight: 700; font-size: 15px; margin-bottom: 10px; }
+  .cost-card .desc { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+  .process-row { display: flex; justify-content: space-between; margin-top: 60px; }
+  .process-step { flex: 1; text-align: center; padding: 0 16px; }
+  .step-circle { width: 56px; height: 56px; border-radius: 50%; border: 2px solid var(--cobalt-mid); display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 18px; color: var(--cobalt-mid); margin: 0 auto 20px; }
+  .process-step h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 17px; margin-bottom: 10px; }
+  .process-step p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+  .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px; }
+  .field label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 10px; }
+  .field input { width: 100%; background: var(--ink-card); border: 1px solid rgba(248,250,252,0.1); border-radius: 8px; padding: 14px 16px; color: var(--pearl); font-size: 15px; font-family: 'Inter', sans-serif; }
+  .field input:focus { outline: none; border-color: var(--cobalt-mid); }
+  .calc-note { font-size: 12px; color: var(--muted); margin-top: 8px; }
+  .results-box { background: var(--ink-card); border-radius: 14px; padding: 32px; }
+  .results-box .eyebrow { margin-bottom: 20px; }
+  .results-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 24px; }
+  .result-card { background: var(--ink); border-radius: 10px; padding: 20px; }
+  .result-card .r-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 8px; }
+  .result-card .r-value { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 26px; font-weight: 800; }
+  .result-card.copper .r-value { color: var(--copper-light); }
+  .result-card.cobalt .r-value { color: var(--cobalt-mid); }
+  .result-card.green .r-value { color: #34D399; }
+  .results-summary { font-size: 14px; color: var(--pearl-dim); line-height: 1.7; background: rgba(37,99,235,0.07); border: 1px solid rgba(37,99,235,0.2); border-radius: 10px; padding: 18px 20px; }
+
+  /* FAQ */
+  .faq-category { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cobalt-mid); margin: 40px 0 16px; }
+  .faq-item { background: var(--ink-card); border-radius: 12px; margin-bottom: 12px; overflow: hidden; }
+  .faq-q { width: 100%; background: none; border: none; color: var(--pearl); font-family: 'Inter', sans-serif; font-weight: 700; font-size: 16px; text-align: left; padding: 22px 24px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+  .faq-q .plus { color: var(--muted); font-size: 20px; transition: transform 0.2s; flex-shrink: 0; margin-left: 16px; }
+  .faq-item.open .plus { transform: rotate(45deg); }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; padding: 0 24px; }
+  .faq-item.open .faq-a { max-height: 400px; padding: 0 24px 22px; }
+  .faq-a p { color: var(--muted); font-size: 14px; line-height: 1.65; }
+
+  /* LEGAL (Terms / Privacy) */
+  .legal-page { max-width: 780px; }
+  .legal-page h2.legal-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 36px; font-weight: 800; margin-bottom: 8px; max-width: none; }
+  .legal-page .updated { font-size: 13px; color: var(--muted); margin-bottom: 30px; }
+  .legal-page .notice { background: rgba(212,147,63,0.08); border: 1px solid rgba(212,147,63,0.25); border-radius: 10px; padding: 18px 22px; font-size: 14px; color: var(--muted); margin-bottom: 40px; line-height: 1.6; }
+  .legal-page h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 19px; font-weight: 700; margin: 30px 0 10px; color: var(--pearl); }
+  .legal-page p, .legal-page li { font-size: 14.5px; color: #C9CFD9; margin-bottom: 12px; line-height: 1.7; }
+  .legal-page ul { padding-left: 22px; margin-bottom: 12px; }
+  .legal-page a { color: #3B82F6; }
+  .back-to-top { display: inline-block; margin-top: 30px; font-size: 13px; color: var(--muted); text-decoration: none; }
+
+  footer { text-align: center; padding: 40px 24px; border-top: 1px solid rgba(248,250,252,0.06); }
+  footer .links { display: flex; justify-content: center; gap: 24px; margin-bottom: 16px; }
+  footer .links a { color: var(--muted); text-decoration: none; font-size: 13px; }
+  footer .copy { font-size: 12px; color: var(--muted); }
+
+  @media (max-width: 800px) {
+    header { flex-direction: column; gap: 16px; }
+    nav { flex-wrap: wrap; justify-content: center; gap: 16px; }
+    .hero h1 { font-size: 34px; }
+    .hero-stats { flex-direction: column; gap: 24px; }
+    .cost-grid, .calc-grid, .results-grid, .offer-grid { grid-template-columns: 1fr; }
+    .process-row { flex-direction: column; gap: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="/" class="logo"><img src="https://raw.githubusercontent.com/optimizedhubllc-prog/optimized-hub-assets/main/OH_Logo_Dark%20(2).png" alt="Optimized Hub">OPTIMIZED HUB</a>
+  <nav>
+    <a href="#who">Who It's For</a>
+    <a href="#offer">The Offer</a>
+    <a href="#roi-calculator">ROI Calculator</a>
+    <a href="/faq">FAQ</a>
+    <a href="https://tally.so/r/68rMbN" class="nav-cta" target="_blank" rel="noopener">Free Audit</a>
+  </nav>
+</header>
+
+<!-- ============ HOME ============ -->
+
+<section class="hero" id="free-audit">
+  <div class="tag">Engineered Logic. Systematic Growth.</div>
+  <h1>The right leads. <span class="accent">At the right moment.</span><br>Without the manual work.</h1>
+  <p class="sub">You're great at your job — but no system can keep up with every lead, every follow-up, and every opportunity at once. We reactivate the dormant leads already sitting in your CRM so you can focus on closing.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="num">78%</div><div class="label">of buyers choose the agent who responds first</div></div>
+    <div class="hero-stat"><div class="num">5 min</div><div class="label">response window before a lead goes cold</div></div>
+  </div>
+</section>
+
+<section id="who">
+  <div class="eyebrow">Who We Serve</div>
+  <h2>Built for one problem.<br>Solved one way.</h2>
+  <p class="subhead">We're focused on one problem: the dormant leads sitting in your CRM that never converted and never got a second look.</p>
+  <div class="who-card">
+    <div class="who-icon">📋</div>
+    <h3>Sales-Driven, CRM-Heavy Businesses</h3>
+    <p>Long sales cycles mean leads go stale fast. Every month adds more names to a CRM that never gets revisited — and every one of them already cost you money to acquire.</p>
+    <ul>
+      <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 5L7 13L3 9" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Database reactivation for leads dormant 60+ days</li>
+      <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 5L7 13L3 9" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Automated SMS + email re-engagement sequences</li>
+      <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 5L7 13L3 9" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Compliant by default — FTSA opt-in, DNC-scrubbed, quiet hours enforced</li>
+      <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 5L7 13L3 9" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Responses booked straight to your calendar</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">The Real Cost</div>
+  <h2>Every dormant lead is money already spent, sitting idle.</h2>
+  <div class="cost-grid">
+    <div class="cost-card"><div class="stat">78%</div><div class="label">Go to the First Responder</div><div class="desc">Buyers and borrowers work with whoever responds first. Without an automated system, that's rarely you.</div></div>
+    <div class="cost-card"><div class="stat">11hrs</div><div class="label">Wasted on Admin Weekly</div><div class="desc">The average sales professional spends 11+ hours a week on manual follow-up and data entry that a system can handle instead.</div></div>
+    <div class="cost-card"><div class="stat">60%</div><div class="label">Of Cold Leads Are Still Viable</div><div class="desc">Most professionals stop following up after 3 attempts. A meaningful share of those leads still transact — with whoever stays in the conversation.</div></div>
+  </div>
+</section>
+
+<section id="offer">
+  <div class="eyebrow">The Offer</div>
+  <h2>One system. Built to fit where you're starting from.</h2>
+  <p class="subhead">Not sure what's worth recovering yet? Start with the free Deep Dive Audit — a live interactive breakdown of your numbers, not a PDF. Ready to go? Pick the track that matches your setup below.</p>
+  <div class="offer-note">
+    <a href="https://tally.so/r/68rMbN" target="_blank" rel="noopener">Start your free Deep Dive Audit &rarr;</a>
+  </div>
+  <div class="offer-grid">
+    <div class="offer-card">
+      <div class="card-eyebrow">Database Reactivation</div>
+      <h3>Already have a CRM full of leads?</h3>
+      <p class="desc">Every lead that's gone 60+ days without contact is revenue sitting idle. We run them through a compliant, automated reactivation sequence — SMS and email — and route responses straight to your calendar.</p>
+      <div class="price-row"><span class="price">$397</span><span class="price-unit">/ month</span></div>
+      <div class="no-setup">No setup fee</div>
+      <ul class="features">
+        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 5L7 13L3 9" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Full CRM database review and lead scoring</li>
+        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 5L7 13L3 9" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Automated SMS + email reactivation sequences</li>
+        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 5L7 13L3 9" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>FTSA-compliant, DNC-scrubbed, quiet-hours enforced</li>
+        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 5L7 13L3 9" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Responses routed straight to your calendar</li>
+        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 5L7 13L3 9" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Fully managed — nothing for you to run day to day</li>
+      </ul>
+      <a href="https://buy.stripe.com/28EcN65QjgAPdn67nLco00s" class="cta-button">Subscribe to Database Reactivation</a>
+    </div>
+    <div class="offer-card">
+      <div class="card-eyebrow">Database Reactivation + CRM</div>
+      <h3>Starting from zero?</h3>
+      <p class="desc">No existing database to reactivate yet? We set you up with our built-in CRM first, then connect the same reactivation, missed-call text-back, and no-show automation on top of it.</p>
+      <div class="price-row"><span class="price">$497</span><span class="price-unit">/ month</span></div>
+      <div class="no-setup">No setup fee</div>
+      <ul class="features">
+        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 5L7 13L3 9" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Full CRM setup, included</li>
+        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 5L7 13L3 9" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Automated SMS + email reactivation sequences</li>
+        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 5L7 13L3 9" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>FTSA-compliant, DNC-scrubbed, quiet-hours enforced</li>
+        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 5L7 13L3 9" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Responses routed straight to your calendar</li>
+        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 5L7 13L3 9" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Fully managed — nothing for you to run day to day</li>
+      </ul>
+      <a href="https://buy.stripe.com/bJe9AUemP4S74QA8rPco00w" class="cta-button">Subscribe to Database Reactivation + CRM</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">The Process</div>
+  <h2>From audit to reactivated leads, without adding to your plate.</h2>
+  <div class="process-row">
+    <div class="process-step"><div class="step-circle">1</div><h3>Get Your Free Audit</h3><p>We review your CRM and show you exactly how many leads are dormant and what they're likely worth.</p></div>
+    <div class="process-step"><div class="step-circle">2</div><h3>We Reactivate Your Database</h3><p>Your dormant leads run through a compliant, automated SMS + email sequence built for your business.</p></div>
+    <div class="process-step"><div class="step-circle">3</div><h3>Booked Calls Land On Your Calendar</h3><p>Leads that respond get routed straight to you. No manual chasing, no dropped follow-up.</p></div>
+  </div>
+</section>
+
+<section id="roi-calculator">
+  <div class="eyebrow">ROI Calculator</div>
+  <h2>See what your dormant leads are worth.</h2>
+  <p class="subhead">Enter your numbers. We'll estimate what reactivation could recover.</p>
+  <div class="calc-grid">
+    <div class="field"><label for="totalLeads">Total Leads in Your CRM</label><input type="number" id="totalLeads" value="600"></div>
+    <div class="field"><label for="dormantPct">Estimated % Dormant (60+ days, no contact)</label><input type="number" id="dormantPct" value="40"></div>
+    <div class="field"><label for="commission">Average Commission Per Deal ($)</label><input type="number" id="commission" value="3500">
+      <div class="calc-note">Default assumes roughly 1% commission on a $350,000 loan — adjust to your own average. Recovery rate assumes a 3% reactivation-to-close rate, in line with industry benchmarks for compliant, automated re-engagement.</div>
+    </div>
+  </div>
+  <div class="results-box">
+    <div class="eyebrow">Your Results</div>
+    <div class="results-grid">
+      <div class="result-card copper"><div class="r-label">Dormant Leads</div><div class="r-value" id="rDormant">—</div></div>
+      <div class="result-card cobalt"><div class="r-label">Est. Recovered Deals</div><div class="r-value" id="rDeals">—</div></div>
+      <div class="result-card green"><div class="r-label">Est. Revenue From Current Backlog</div><div class="r-value" id="rRevenue">—</div></div>
+    </div>
+    <div class="results-summary" id="rSummary"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="links">
+    <a href="/faq">FAQ</a>
+    <a href="/terms">Terms of Service</a>
+    <a href="/privacy">Privacy Policy</a>
+  </div>
+  <div class="copy">© 2026 Optimized Hub Media LLC. Tampa, FL.</div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => btn.parentElement.classList.toggle('open'));
+  });
+
+  function calc() {
+    const totalLeads = parseFloat(document.getElementById('totalLeads').value) || 0;
+    const dormantPct = parseFloat(document.getElementById('dormantPct').value) || 0;
+    const commission = parseFloat(document.getElementById('commission').value) || 0;
+    const dormantLeads = Math.round(totalLeads * (dormantPct / 100));
+    const recoveredDeals = dormantLeads * 0.03;
+    const monthlyRevenue = Math.round(recoveredDeals * commission);
+    document.getElementById('rDormant').textContent = dormantLeads.toLocaleString();
+    document.getElementById('rDeals').textContent = recoveredDeals.toFixed(1);
+    document.getElementById('rRevenue').textContent = '$' + monthlyRevenue.toLocaleString();
+    const summary = document.getElementById('rSummary');
+    if (dormantLeads > 0) {
+      const roiX = monthlyRevenue > 0 ? Math.round((monthlyRevenue / 397) * 100) / 100 : 0;
+      summary.textContent = `At these numbers, reactivating your current backlog of dormant leads could recover roughly $${monthlyRevenue.toLocaleString()} from deals already sitting in your CRM. At $397/mo with no setup fee, that's a return of ${roiX}x a single month's cost \u2014 and new leads keep going dormant every month, so the system keeps finding more after this first pass.`;
+    } else {
+      summary.textContent = 'Enter your numbers above to see your estimate.';
+    }
+  }
+  ['totalLeads', 'dormantPct', 'commission'].forEach(id => {
+    document.getElementById(id).addEventListener('input', calc);
+  });
+  calc();
+</script>
+
+</body>
+</html>
