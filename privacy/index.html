@@ -5,56 +5,161 @@
 <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/optimizedhubllc-prog/optimized-hub-assets/main/OH_Logo_Dark%20(2).png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — Optimized Hub</title>
-<meta name="description" content="Privacy Policy for Optimized Hub Media LLC, including how Google user data is used.">
+<meta name="description" content="Privacy Policy for Optimized Hub Media LLC: what data we collect, how we use it, who we share it with, how long we keep it, and how to request deletion. Includes how we use Google user data.">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap');
-  :root { --cobalt:#2563EB; --cobalt-mid:#3B82F6; --copper:#C17B3C; --copper-light:#D4933F; --ink:#111827; --ink-bg:#0B0F1A; --ink-card:#151B29; --pearl:#F8FAFC; --pearl-dim:#E5EAF0; --muted:#9CA3AF; }
+
+  :root {
+    --cobalt: #2563EB;
+    --cobalt-mid: #3B82F6;
+    --copper: #C17B3C;
+    --copper-light: #D4933F;
+    --ink: #111827;
+    --ink-bg: #0B0F1A;
+    --ink-card: #151B29;
+    --pearl: #F8FAFC;
+    --pearl-dim: #E5EAF0;
+    --muted: #9CA3AF;
+  }
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body { font-family: 'Inter', sans-serif; background: var(--ink-bg); color: var(--pearl); }
-  header { display:flex; align-items:center; justify-content:space-between; padding:24px 40px; background:var(--ink-bg); border-bottom:1px solid rgba(248,250,252,0.06); position:sticky; top:0; z-index:50; }
-  .logo { display:flex; align-items:center; gap:10px; font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:16px; letter-spacing:0.05em; text-decoration:none; color:var(--pearl); }
-  .logo img { width:30px; height:30px; border-radius:8px; border:1px solid rgba(96,165,250,0.4); }
-  nav { display:flex; gap:32px; align-items:center; }
-  nav a { color:var(--muted); text-decoration:none; font-size:14px; font-weight:500; }
-  nav a:hover { color:var(--pearl); }
-  .nav-cta { background:var(--cobalt); color:var(--pearl) !important; padding:10px 20px; border-radius:8px; font-weight:700; }
-  section { padding:90px 24px; max-width:1100px; margin:0 auto; }
-  .eyebrow { font-family:'Plus Jakarta Sans',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--copper-light); margin-bottom:14px; }
-  h1, h2 { font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; line-height:1.15; }
-  .hero { text-align:center; padding-top:80px; }
-  .hero .tag { font-size:12px; font-weight:700; letter-spacing:0.16em; color:var(--copper-light); text-transform:uppercase; margin-bottom:20px; }
-  .hero h1 { font-size:46px; max-width:850px; margin:0 auto 28px; }
-  .hero h1 .accent { color:var(--copper-light); }
-  .hero .sub { font-size:17px; color:var(--muted); max-width:640px; margin:0 auto 40px; line-height:1.7; }
-  .cta-button { display:inline-block; background:var(--cobalt); color:var(--pearl); font-family:'Plus Jakarta Sans',sans-serif; font-weight:700; font-size:15px; padding:16px 36px; border-radius:8px; text-decoration:none; }
-  section h2 { font-size:34px; margin-bottom:18px; max-width:700px; }
-  .subhead { font-size:16px; color:var(--muted); line-height:1.6; max-width:600px; margin-bottom:40px; }
-  .cost-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
-  .cost-card { background:var(--ink-card); border-radius:14px; padding:32px; }
-  .cost-card .label { font-family:'Plus Jakarta Sans',sans-serif; font-weight:700; font-size:18px; margin-bottom:10px; }
-  .cost-card .kicker { font-family:'Plus Jakarta Sans',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--cobalt-mid); margin-bottom:10px; }
-  .cost-card .desc { font-size:14px; color:var(--muted); line-height:1.65; }
-  .who-card { background:var(--ink); border:1px solid rgba(37,99,235,0.2); border-radius:16px; padding:44px; max-width:640px; }
-  .who-card h3 { font-family:'Plus Jakarta Sans',sans-serif; font-size:24px; font-weight:700; margin-bottom:12px; }
-  .who-card p { color:var(--muted); font-size:15px; line-height:1.65; margin-bottom:24px; }
-  .who-card ul { list-style:none; }
-  .who-card li { display:flex; align-items:flex-start; gap:12px; font-size:15px; color:var(--pearl-dim); padding:8px 0; }
-  .who-card li svg { flex-shrink:0; margin-top:3px; }
-  .legal-page { max-width:780px; }
-  .legal-page h2.legal-title { font-family:'Plus Jakarta Sans',sans-serif; font-size:36px; font-weight:800; margin-bottom:8px; max-width:none; }
-  .legal-page .updated { font-size:13px; color:var(--muted); margin-bottom:30px; }
-  .legal-page .notice { background:rgba(212,147,63,0.08); border:1px solid rgba(212,147,63,0.25); border-radius:10px; padding:18px 22px; font-size:14px; color:var(--muted); margin-bottom:40px; line-height:1.6; }
-  .legal-page h3 { font-family:'Plus Jakarta Sans',sans-serif; font-size:19px; font-weight:700; margin:30px 0 10px; color:var(--pearl); }
-  .legal-page p, .legal-page li { font-size:14.5px; color:#C9CFD9; margin-bottom:12px; line-height:1.7; }
-  .legal-page ul { padding-left:22px; margin-bottom:12px; }
-  .legal-page a { color:#3B82F6; }
-  .back-to-top { display:inline-block; margin-top:30px; font-size:13px; color:var(--muted); text-decoration:none; }
-  footer { text-align:center; padding:40px 24px; border-top:1px solid rgba(248,250,252,0.06); }
-  footer .links { display:flex; justify-content:center; gap:24px; margin-bottom:16px; }
-  footer .links a { color:var(--muted); text-decoration:none; font-size:13px; }
-  footer .copy { font-size:12px; color:var(--muted); }
-  @media (max-width:800px) { header{flex-direction:column;gap:16px;} nav{flex-wrap:wrap;justify-content:center;gap:16px;} .hero h1{font-size:32px;} .cost-grid{grid-template-columns:1fr;} }
+
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 24px 40px;
+    background: var(--ink-bg);
+    border-bottom: 1px solid rgba(248,250,252,0.06);
+    position: sticky; top: 0; z-index: 50;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 16px; letter-spacing: 0.05em; text-decoration: none; color: var(--pearl); }
+  .logo-mark { display: none; }
+  .logo img { width: 30px; height: 30px; border-radius: 8px; border: 1px solid rgba(96,165,250,0.4); }
+  nav { display: flex; gap: 32px; align-items: center; }
+  nav a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; }
+  nav a:hover { color: var(--pearl); }
+  .nav-cta { background: var(--cobalt); color: var(--pearl) !important; padding: 10px 20px; border-radius: 8px; font-weight: 700; }
+
+  section { padding: 90px 24px; max-width: 1100px; margin: 0 auto; }
+
+  .eyebrow {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--copper-light);
+    margin-bottom: 14px;
+  }
+
+  h1, h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800; line-height: 1.15;
+  }
+
+  .hero { text-align: center; padding-top: 80px; }
+  .hero .tag { font-size: 12px; font-weight: 700; letter-spacing: 0.16em; color: var(--copper-light); text-transform: uppercase; margin-bottom: 20px; }
+  .hero h1 { font-size: 52px; max-width: 850px; margin: 0 auto 28px; }
+  .hero h1 .accent { color: var(--copper-light); }
+  .hero .sub { font-size: 17px; color: var(--muted); max-width: 620px; margin: 0 auto 40px; line-height: 1.7; }
+  .cta-button {
+    display: inline-block; background: var(--cobalt); color: var(--pearl);
+    font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 15px;
+    padding: 16px 36px; border-radius: 8px; text-decoration: none;
+  }
+  .hero-stats { display: flex; justify-content: center; gap: 80px; margin-top: 70px; }
+  .hero-stat .num { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 34px; font-weight: 800; color: var(--copper-light); }
+  .hero-stat .label { font-size: 13px; color: var(--muted); margin-top: 6px; }
+
+  section h2 { font-size: 38px; margin-bottom: 18px; max-width: 700px; }
+  .subhead { font-size: 16px; color: var(--muted); line-height: 1.6; max-width: 560px; margin-bottom: 48px; }
+
+  .offer-card {
+    background: var(--ink); border: 1px solid rgba(37,99,235,0.25);
+    border-radius: 16px; padding: 48px 44px; text-align: left; max-width: 640px;
+  }
+  .offer-card .card-eyebrow { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cobalt-mid); margin-bottom: 10px; }
+  .offer-card h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 28px; font-weight: 700; margin-bottom: 14px; }
+  .offer-card .desc { font-size: 15px; color: var(--muted); line-height: 1.65; margin-bottom: 32px; max-width: 480px; }
+  .price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 6px; }
+  .price { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 48px; font-weight: 800; color: var(--pearl); }
+  .price-unit { font-size: 16px; color: var(--muted); }
+  .no-setup { font-size: 13px; color: var(--copper-light); font-weight: 600; margin-bottom: 32px; }
+  .features { list-style: none; margin-bottom: 40px; border-top: 1px solid rgba(248,250,252,0.08); padding-top: 28px; }
+  .features li { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; color: var(--pearl-dim); padding: 9px 0; }
+  .features li svg { flex-shrink: 0; margin-top: 3px; }
+  .cta-micro { display: block; margin-top: 14px; font-size: 13px; color: var(--muted); }
+  .secondary-link-wrap { margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(248,250,252,0.08); }
+  .secondary-link-wrap a { font-size: 14px; color: var(--muted); text-decoration: underline; }
+
+  .who-card { background: var(--ink); border: 1px solid rgba(37,99,235,0.2); border-radius: 16px; padding: 44px; max-width: 640px; }
+  .who-icon { width: 52px; height: 52px; background: rgba(37,99,235,0.12); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 20px; }
+  .who-card h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px; font-weight: 700; margin-bottom: 12px; }
+  .who-card p { color: var(--muted); font-size: 15px; line-height: 1.65; margin-bottom: 24px; }
+  .who-card ul { list-style: none; }
+  .who-card li { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; color: var(--pearl-dim); padding: 8px 0; }
+  .who-card li svg { flex-shrink: 0; margin-top: 3px; }
+
+  .cost-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .cost-card { background: var(--ink-card); border-radius: 14px; padding: 32px; }
+  .cost-card .stat { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 40px; font-weight: 800; color: var(--copper-light); margin-bottom: 8px; }
+  .cost-card .label { font-weight: 700; font-size: 15px; margin-bottom: 10px; }
+  .cost-card .desc { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+  .process-row { display: flex; justify-content: space-between; margin-top: 60px; }
+  .process-step { flex: 1; text-align: center; padding: 0 16px; }
+  .step-circle { width: 56px; height: 56px; border-radius: 50%; border: 2px solid var(--cobalt-mid); display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 18px; color: var(--cobalt-mid); margin: 0 auto 20px; }
+  .process-step h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 17px; margin-bottom: 10px; }
+  .process-step p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+  .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px; }
+  .field label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 10px; }
+  .field input { width: 100%; background: var(--ink-card); border: 1px solid rgba(248,250,252,0.1); border-radius: 8px; padding: 14px 16px; color: var(--pearl); font-size: 15px; font-family: 'Inter', sans-serif; }
+  .field input:focus { outline: none; border-color: var(--cobalt-mid); }
+  .calc-note { font-size: 12px; color: var(--muted); margin-top: 8px; }
+  .results-box { background: var(--ink-card); border-radius: 14px; padding: 32px; }
+  .results-box .eyebrow { margin-bottom: 20px; }
+  .results-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 24px; }
+  .result-card { background: var(--ink); border-radius: 10px; padding: 20px; }
+  .result-card .r-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 8px; }
+  .result-card .r-value { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 26px; font-weight: 800; }
+  .result-card.copper .r-value { color: var(--copper-light); }
+  .result-card.cobalt .r-value { color: var(--cobalt-mid); }
+  .result-card.green .r-value { color: #34D399; }
+  .results-summary { font-size: 14px; color: var(--pearl-dim); line-height: 1.7; background: rgba(37,99,235,0.07); border: 1px solid rgba(37,99,235,0.2); border-radius: 10px; padding: 18px 20px; }
+
+  /* FAQ */
+  .faq-category { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cobalt-mid); margin: 40px 0 16px; }
+  .faq-item { background: var(--ink-card); border-radius: 12px; margin-bottom: 12px; overflow: hidden; }
+  .faq-q { width: 100%; background: none; border: none; color: var(--pearl); font-family: 'Inter', sans-serif; font-weight: 700; font-size: 16px; text-align: left; padding: 22px 24px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+  .faq-q .plus { color: var(--muted); font-size: 20px; transition: transform 0.2s; flex-shrink: 0; margin-left: 16px; }
+  .faq-item.open .plus { transform: rotate(45deg); }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; padding: 0 24px; }
+  .faq-item.open .faq-a { max-height: 400px; padding: 0 24px 22px; }
+  .faq-a p { color: var(--muted); font-size: 14px; line-height: 1.65; }
+
+  /* LEGAL (Terms / Privacy) */
+  .legal-page { max-width: 780px; }
+  .legal-page h2.legal-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 36px; font-weight: 800; margin-bottom: 8px; max-width: none; }
+  .legal-page .updated { font-size: 13px; color: var(--muted); margin-bottom: 30px; }
+  .legal-page .notice { background: rgba(212,147,63,0.08); border: 1px solid rgba(212,147,63,0.25); border-radius: 10px; padding: 18px 22px; font-size: 14px; color: var(--muted); margin-bottom: 40px; line-height: 1.6; }
+  .legal-page h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 19px; font-weight: 700; margin: 30px 0 10px; color: var(--pearl); }
+  .legal-page p, .legal-page li { font-size: 14.5px; color: #C9CFD9; margin-bottom: 12px; line-height: 1.7; }
+  .legal-page ul { padding-left: 22px; margin-bottom: 12px; }
+  .legal-page a { color: #3B82F6; }
+  .back-to-top { display: inline-block; margin-top: 30px; font-size: 13px; color: var(--muted); text-decoration: none; }
+
+  footer { text-align: center; padding: 40px 24px; border-top: 1px solid rgba(248,250,252,0.06); }
+  footer .links { display: flex; justify-content: center; gap: 24px; margin-bottom: 16px; }
+  footer .links a { color: var(--muted); text-decoration: none; font-size: 13px; }
+  footer .copy { font-size: 12px; color: var(--muted); }
+
+  @media (max-width: 800px) {
+    header { flex-direction: column; gap: 16px; }
+    nav { flex-wrap: wrap; justify-content: center; gap: 16px; }
+    .hero h1 { font-size: 34px; }
+    .hero-stats { flex-direction: column; gap: 24px; }
+    .cost-grid, .calc-grid, .results-grid { grid-template-columns: 1fr; }
+    .process-row { flex-direction: column; gap: 40px; }
+  }
 </style>
 </head>
 
@@ -74,71 +179,125 @@
 <section id="privacy">
   <div class="legal-page">
     <h2 class="legal-title">Privacy Policy</h2>
-    <p class="updated">Last updated: September 2026</p>
+    <p class="updated">Last updated: September 29, 2026</p>
 
-    <h3>1. Overview</h3>
-    <p>This Privacy Policy explains how Optimized Hub Media LLC ("Optimized Hub," "we," "us") collects, uses, and protects information in connection with our website, our Database Reactivation service, and our Hub CRM (together, the "Service"). Section 4 separately describes how Optimized Hub Media LLC uses Google's Gmail API in its own internal business operations, which is distinct from the Service.</p>
+    <h3>1. Who We Are</h3>
+    <p>Optimized Hub Media LLC ("Optimized Hub," "we," "us," or "our") is a limited liability company based in Tampa, Florida. We provide database reactivation, a lead-management CRM, and related marketing automation for mortgage, lending, and real estate professionals. You can reach us at admin@optimizedhub.com.</p>
+    <p>This Privacy Policy explains what information we collect, how we use it, who we share it with, how long we keep it, and the choices you have. It applies to our website at optimizedhub.com, our Database Reactivation service, our Optimized Hub CRM and client document portal, and our internal business operations, including how we use Google's Gmail API (Section 8).</p>
 
-    <h3>2. Information We Collect</h3>
-    <p><strong>From website visitors:</strong> basic contact information submitted through our free audit form (name, email, business type, and general lead-flow details you choose to share).</p>
-    <p><strong>From clients:</strong> account and billing information (processed by Stripe on our behalf), and CRM access credentials or exported contact data needed to run the reactivation service.</p>
-    <p><strong>From your CRM leads:</strong> on your behalf, we process the contact information (name, phone number, email) of dormant leads in your CRM solely to run the reactivation sequences you've authorized. In Hub CRM, you may also store lead details such as property address, loan stage, and documents that borrowers upload through a private link.</p>
-
-    <h3>3. How We Use Information</h3>
+    <h3>2. Who This Policy Covers</h3>
     <ul>
-      <li>To deliver the free audit and reactivation service you've requested;</li>
-      <li>To process payments and manage your subscription;</li>
-      <li>To communicate with you about your account or service delivery;</li>
-      <li>To improve our service and internal operations.</li>
+      <li><strong>Website visitors and prospects</strong> who read our site or request a free audit.</li>
+      <li><strong>Clients</strong>: the licensed professionals and businesses that subscribe to our services, and the team members they add to the CRM.</li>
+      <li><strong>Leads and borrowers</strong>: people whose contact details our clients store in their CRM or upload to the document portal. For this data we act on our clients' behalf (Section 10).</li>
+      <li><strong>Our own business email</strong>: the Google account we use to run Optimized Hub Media LLC itself (Section 8).</li>
     </ul>
-    <p>We do not sell your data or your leads' data to third parties.</p>
 
-    <h3>4. Google User Data (Our Internal Business Operations)</h3>
+    <h3>3. Information We Collect</h3>
+    <p><strong>From website visitors and prospects.</strong> Name, email address, business type, and general lead-flow details that you choose to enter in our free audit form or send us by email. Our website is also visited through your browser, which sends us standard technical information such as IP address and browser type.</p>
+    <p><strong>From clients.</strong></p>
+    <ul>
+      <li>Account details: name, business name, email address, phone number, role, brokerage, and, where applicable, NMLS numbers and brand details such as logo and colors.</li>
+      <li>Billing details: payments are processed by Stripe. We receive confirmation of payment, plan, and billing status. We do not store full card numbers.</li>
+      <li>Service data: the CRM records, contact lists, and message templates you give us access to in order to run the service.</li>
+      <li>Communications: messages you send us and records of support requests.</li>
+    </ul>
+    <p><strong>About leads and borrowers, on our clients' behalf.</strong> Names, phone numbers, email addresses, property addresses, loan stage and purchase details, notes, message history, and documents that a borrower uploads through a private link.</p>
+    <p><strong>Usage information.</strong> When you use the CRM, we record sign-in details and activity such as which records were created or changed, so we can secure the service and troubleshoot problems.</p>
+
+    <h3>4. How We Use Information</h3>
+    <ul>
+      <li>To deliver the free audit and the services you requested;</li>
+      <li>To run reactivation sequences, milestone updates, and reminders that our clients authorize;</li>
+      <li>To provide, secure, and support the CRM and document portal;</li>
+      <li>To process payments and manage subscriptions;</li>
+      <li>To communicate with you about your account, service changes, and support;</li>
+      <li>To keep our systems reliable, detect abuse, and monitor for errors;</li>
+      <li>To keep our own books and meet legal, tax, and accounting obligations;</li>
+      <li>To improve and troubleshoot our services and internal operations.</li>
+    </ul>
+    <p>We do not sell personal information, and we do not use it for advertising by third parties.</p>
+
+    <h3>5. Text and Email Messaging</h3>
+    <p>Our clients use our service to send text messages and emails to their own leads. Those messages are sent on the client's behalf, and the client is responsible for having permission to contact each recipient. We apply opt-in consent checks, Do-Not-Call scrubbing, and quiet-hours enforcement before messages are sent.</p>
+    <ul>
+      <li>Reply <strong>STOP</strong> to any text message to opt out at any time. Reply <strong>HELP</strong> for help. Message and data rates may apply, and message frequency varies.</li>
+      <li>Mobile numbers and text-messaging opt-in information are not shared with third parties or affiliates for their own marketing or promotional purposes.</li>
+      <li>Wireless carriers are not liable for delayed or undelivered messages.</li>
+    </ul>
+
+    <h3>6. AI Processing</h3>
+    <p>We use an AI model (Anthropic's Claude API) to help draft messages and to extract details from business receipts (Section 8). The AI service receives only the limited information needed for the specific task. Under Anthropic's commercial terms, inputs to its API are not used to train its models by default. We do not use personal information to train any AI model of our own.</p>
+
+    <h3>7. Sharing and Disclosure</h3>
+    <p>We do not sell or rent personal information. We share it only in these situations:</p>
+    <ul>
+      <li><strong>Service providers</strong> who help us run the service, each limited to what they need to do their job: Stripe (payments), Railway and Supabase (hosting and database), Google (email and Sheets), Quo and Twilio (text messaging), Anthropic (AI processing), Notion and Google Sheets (internal tracking), and Tally (audit form).</li>
+      <li><strong>Our clients</strong>, for their own leads and records. Each client sees only its own data.</li>
+      <li><strong>Legal reasons</strong>: to comply with law, respond to lawful requests, or protect the rights, safety, and security of our clients, our users, or us.</li>
+      <li><strong>Business changes</strong>: if we are involved in a merger, acquisition, or sale of assets, data may transfer as part of that transaction, and we will require the new owner to honor this policy.</li>
+      <li><strong>With your consent</strong>, or at your direction.</li>
+    </ul>
+
+    <h3>8. Google User Data (Gmail API)</h3>
     <div class="notice"><strong>Summary.</strong> Optimized Hub Media LLC uses Google's Gmail API in its own internal operations. It connects to one mailbox: the business account of our owner, pedro@optimizedhub.com. This is separate from our Database Reactivation and CRM services. Customers are never asked to connect a Google account.</div>
-    <p><strong>Data we access.</strong> With the owner's authorization, our internal tools can send email from that Gmail account and can search and read messages in that mailbox. Reading is used only to find receipts, invoices, and payment notifications from software and service vendors.</p>
-    <p><strong>How we use it.</strong></p>
+    <p><strong>What we access.</strong> With the owner's authorization, our internal tools can send email from that Gmail account and can search and read messages in it. The permissions granted are those requested by our automation platform's Google connector. Our workflows use them only for the two purposes below.</p>
+    <p><strong>Why we use it.</strong></p>
     <ul>
-      <li>To send the company's own business email: onboarding and payment confirmations to customers, audit reports a prospect requested, and internal alerts to the owner.</li>
-      <li>To extract the date, vendor, amount, and category from vendor receipts and add each one, as a pending entry, to the owner's private bookkeeping ledger, where the owner confirms or dismisses it.</li>
+      <li><strong>Sending the company's own business email:</strong> onboarding and payment confirmations to customers, audit reports that a prospect requested, and internal alerts to the owner.</li>
+      <li><strong>Logging the company's business expenses:</strong> once a week, we search the mailbox for receipts, invoices, and payment notifications from software and service vendors, extract the date, vendor, amount, and category, and add each one as a pending entry to the owner's private bookkeeping ledger, where the owner confirms or dismisses it.</li>
     </ul>
-    <p><strong>AI processing.</strong> To extract expense details, the text of a matching receipt email is sent through our automation platform to Anthropic's Claude API, which returns the structured fields. This is done only to provide the expense-logging feature to the owner. Anthropic's commercial terms state that API inputs are not used to train its models by default. We do not use Gmail data to train, develop, or improve any AI or machine-learning model of our own.</p>
-    <p><strong>What we store.</strong> Only the extracted ledger fields (date, vendor, amount, category, a short snippet, and the message ID used to prevent duplicates) are stored, in a private database that only the owner can read. We do not keep copies of full mailbox contents outside Gmail.</p>
-    <p><strong>What we do not do.</strong> We do not sell Gmail data; we do not share it with advertisers, data brokers, or other third parties; we do not use it for advertising; and no person other than the owner reads the mailbox content, except where required to comply with law or to investigate abuse or a security issue.</p>
+    <p><strong>How the data is handled.</strong></p>
+    <ul>
+      <li>The text of a matching receipt is sent to Anthropic's Claude API only to extract the fields above and is not used to train AI models.</li>
+      <li>We store only the extracted ledger fields (date, vendor, amount, category, a short snippet, and the message ID used to prevent duplicates) in a private database that only the owner can read. We do not keep copies of the mailbox's contents elsewhere.</li>
+      <li>We do not sell Gmail data, share it with advertisers or data brokers, use it for advertising, or transfer it to others except as needed to provide these features, to comply with law, or as part of a business transfer.</li>
+      <li>No person other than the owner reads mailbox content, except where needed to investigate abuse or a security issue, or to comply with law.</li>
+    </ul>
     <p><strong>Limited Use.</strong> Optimized Hub Media LLC's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
-    <p><strong>Revoking access.</strong> The owner can revoke our access at any time at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>. Ledger data can be deleted on request or by the owner directly, and we delete requested data within 30 days.</p>
+    <p><strong>Revoking access and deletion.</strong> The owner can revoke access at any time at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>. Ledger data can be deleted by the owner at any time or on request, and we delete requested data within 30 days.</p>
 
-    <h3>5. Our Role as a Data Processor</h3>
-    <p>With respect to the contact data of your CRM leads, Optimized Hub acts as a data processor on your behalf, not as the owner of that data. You remain the data controller responsible for the underlying legal basis to contact those individuals. We process this data solely to deliver the Service and do not use it for any other purpose. Messages sent through the Service may be drafted with the help of an AI model (Anthropic's Claude API), which receives only the limited lead details needed to write the message.</p>
+    <h3>9. Cookies, Browser Storage, and Third-Party Content</h3>
+    <p>Our marketing website loads fonts from Google Fonts, which means your browser contacts Google when the page loads. Our free audit form is hosted by Tally, and our payments are hosted by Stripe; each has its own privacy policy. The Optimized Hub CRM uses browser storage to keep you signed in and to remember interface preferences. We do not use advertising cookies or sell browsing data.</p>
 
-    <h3>6. Third-Party Services We Use</h3>
-    <p>To deliver the Service, we rely on the following categories of third-party providers, each governed by their own privacy and security practices:</p>
+    <h3>10. Our Role as a Data Processor</h3>
+    <p>For the contact information and documents of clients' leads and borrowers, Optimized Hub acts as a data processor on the client's behalf. The client, as the originating business, remains the data controller and is responsible for having a lawful basis to contact those individuals and for its own regulatory recordkeeping. We process this data solely to deliver the service and do not use it for any other purpose. If you are a lead or borrower and want to see, correct, or delete your data, please contact the professional you work with first; we will assist them on request.</p>
+
+    <h3>11. Data Retention</h3>
     <ul>
-      <li>Payment processing (Stripe)</li>
-      <li>Cloud hosting and database (Railway, Supabase)</li>
-      <li>Automation and workflow infrastructure (self-hosted)</li>
-      <li>Email (Google) and SMS delivery providers (Quo, Twilio)</li>
-      <li>AI processing (Anthropic)</li>
-      <li>Internal tracking and CRM tools (Notion, Google Sheets)</li>
+      <li><strong>Client account and billing records:</strong> kept while your subscription is active and for a reasonable period afterward for tax, accounting, and legal purposes.</li>
+      <li><strong>Lead data processed for clients:</strong> kept as needed to deliver the service, then deleted or returned to the client after termination on request.</li>
+      <li><strong>Borrower documents:</strong> for leads marked "Dead," documents are deleted automatically after 90 days. Documents on active or funded files are not deleted automatically. Clients are responsible for confirming that this meets their own recordkeeping obligations and for keeping their own backups.</li>
+      <li><strong>Internal ledger data extracted from Gmail:</strong> kept as long as needed for bookkeeping and tax purposes, or until deleted by the owner.</li>
+      <li><strong>Error and activity logs:</strong> kept for a limited period to secure and troubleshoot the service.</li>
     </ul>
-    <p>These providers process data only to provide their service to us.</p>
 
-    <h3>7. Data Retention</h3>
-    <p>We retain client account information for as long as your subscription is active and for a reasonable period afterward for recordkeeping and legal compliance. Lead contact data processed on your behalf is retained only as needed to deliver the Service and is deleted or returned upon request following termination. Documents uploaded by borrowers for leads marked dead are deleted after 90 days. Clients are responsible for confirming that this retention meets their own regulatory obligations and for keeping their own backups.</p>
+    <h3>12. Security</h3>
+    <p>We use reasonable administrative and technical safeguards to protect the information we handle, including encrypted connections, encrypted credential storage, row-level access controls that keep each client's data separate, restricted administrative access, and activity logging. Our hosting providers apply their own security controls to the infrastructure. No system is completely secure, and we cannot guarantee absolute security.</p>
+    <p>If we learn of a security incident affecting your information, we will notify affected clients and any others as required by law.</p>
 
-    <h3>8. Security</h3>
-    <p>We apply reasonable administrative and technical safeguards to protect data we handle, including encrypted credential storage, row-level access controls on our databases, and compliance measures such as opt-in consent verification, Do-Not-Call scrubbing, and quiet-hours enforcement before any outbound message is sent.</p>
+    <h3>13. Your Rights and Choices</h3>
+    <p>Depending on where you live, you may have the right to know what personal information we hold about you, to access or correct it, to delete it, and to opt out of certain uses. To exercise these rights, email admin@optimizedhub.com. We may need to verify your identity, and we respond within 30 days.</p>
+    <ul>
+      <li><strong>Text messages:</strong> reply STOP to opt out.</li>
+      <li><strong>Email:</strong> use the unsubscribe or reply option in any marketing message, or email us.</li>
+      <li><strong>Google access:</strong> revoke at myaccount.google.com/permissions.</li>
+    </ul>
 
-    <h3>9. Your Choices</h3>
-    <p>You may request access to, correction of, or deletion of your account information at any time by contacting us. If you are a lead contacted through the Service and wish to opt out of further communication, you may reply STOP to any message or contact admin@optimizedhub.com.</p>
+    <h3>14. Requesting Deletion of Your Data</h3>
+    <p>To ask us to delete your account or data, email admin@optimizedhub.com from the address on your account with the subject "Delete my data." We will confirm the request, delete the data we control within 30 days, and tell you if we must keep anything to meet a legal obligation.</p>
 
-    <h3>10. Children's Privacy</h3>
-    <p>Our Service is intended for business use by licensed professionals and is not directed at individuals under 18.</p>
+    <h3>15. Where Data Is Processed</h3>
+    <p>We operate in the United States and our service is intended for United States businesses. Our service providers may process data in the United States and in other countries where they operate.</p>
 
-    <h3>11. Changes to This Policy</h3>
-    <p>We may update this Privacy Policy from time to time. Material changes will be reflected by updating the "Last updated" date above.</p>
+    <h3>16. Children's Privacy</h3>
+    <p>Our services are for business use by licensed professionals and are not directed to anyone under 18. We do not knowingly collect personal information from children.</p>
 
-    <h3>12. Contact</h3>
-    <p>Questions about this Privacy Policy can be directed to admin@optimizedhub.com.</p>
+    <h3>17. Changes to This Policy</h3>
+    <p>We may update this policy as our services change. We will update the date above and, for material changes, notify clients by email. Material changes to how we use Google user data will be posted here before they take effect.</p>
+
+    <h3>18. Contact</h3>
+    <p>Optimized Hub Media LLC, Tampa, Florida<br>Email: admin@optimizedhub.com</p>
 
     <a href="/" class="back-to-top">&uarr; Back to top</a>
   </div>
